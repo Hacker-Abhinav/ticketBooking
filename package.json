@@ -1,0 +1,22 @@
+{
+  "name": "ticketbooking",
+  "version": "1.0.0",
+  "description": "Theatre Ticket Booking System",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abhinav kumar",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.10.2",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {}
+}
