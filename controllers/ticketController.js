@@ -52,6 +52,7 @@ exports.getAllTickets = catchAsync(async (req, res, next) => {
   const tickets = await Ticket.find();
   res.status(200).json({
     status: 'success',
+    result: tickets.length,
     data: {
       tickets,
     },
@@ -73,6 +74,7 @@ exports.getTicketsAtTime = catchAsync(async (req, res, next) => {
   const tickets = await Ticket.find({ $startsAt: req.body.startsAt });
   res.status(200).json({
     status: 'success',
+    result: tickets.length,
     data: {
       tickets,
     },
